@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laivor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c5717cb10e.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html" class="logo"><span>L</span>AIVOR</a>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li> 
+                <li><a href="#team">Team</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+    <div class="job-form">
+        <h1>Job <span>Application</span></h1>
+        <p>Please complete the form below to apply for a position with us.</p>
+    </div>
+
+    <div id="contact">
+        <div class="form-input">
+            <div class="row">
+                <div class="form-right">
+                    <form action="" method="POST">
+                        <!-- -----name fields----- -->
+                        <div class="name-fields">
+                            <input type="text" name="fname" placeholder="First Name" required>
+                            <input type="text" name="mname" placeholder="Middle Name" required>
+                            <input type="text" name="lname" placeholder="Last Name" required>
+                        </div>
+        
+                        <!-- -----Date of birth fields----- -->
+                        <label for="">Date of Birth</label>
+                        <div class="dob-fields">
+                            <select name="date">
+                                <option value="select">Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <select name="month">
+                                <option value="select">Month</option>
+                                <option value="january">January</option>
+                            </select>
+                            <select name="year">
+                                <option value="select">Year</option>
+                                <option value="1959">1959</option>
+                                <option value="2024">2024</option>
+                            </select>
+                        </div>
+        
+                        <!-- -----Address fields----- -->
+                        <input type="text" name="address" placeholder="Your Address" required>
+        
+                        <!-- -----City and State fields----- -->
+                        <div class="city-state-fields">
+                            <input type="text" name="city" placeholder="Your City" required>
+                            <input type="text" name="province" placeholder="Your State/Province" required>
+                        </div>
+        
+                        <!-- -----Zip code field----- -->
+                        <input type="number" name="zipcode" placeholder="Your Zip Code" required>
+        
+                        <!-- -----Email and phone number fields----- -->
+                        <div class="email-phone-fields">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="number" name="number" placeholder="Your Number" required>
+                        </div>
+        
+                        <!-- -----LinkedIn Field----- -->
+                        <input type="url" name="linkedin" placeholder="Your Linkedin Profile's Url" required>
+        
+                        <!-- -----Position and Hear fields----- -->
+                        <div class="position-hear-fields">
+                            <select name="position">
+                                <option value="select">Position</option>
+                                <option value="Maketing">Maketing</option>
+                                <option value="Developer">Developer</option>
+                                <option value="Designer">Designer</option>
+                                <option value="Lead Generator">Lead Generator</option>
+                                <option value="HR">HR</option>
+                                <option value="Admin">Admin</option>
+                            </select>
+                            <select name="hear">
+                                <option value="select">How did you hear about us?</option>
+                                <option value="Linkedin">Linkedin</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Twitter">Twitter</option>
+                                <option value="Youtube">Youtube</option>
+                                <option value="Family/Friend">Family/Friend</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <label for="">Resume/CV:</label><br><br>
+                        <!-- -----CV / Resume Field----- -->
+                        <div class="file-upload-wrapper">
+                            <label for="resume" class="file-label">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                                <p>Drag and drop files here</p>
+                            </label>
+                            <input type="file" id="resume" name="resume" required>
+                        </div>
+        
+                        <!-- -----Message Field----- -->
+                        <textarea name="message" rows="6" placeholder="Any Message"></textarea>
+        
+                        <!-- -----Submit Button----- -->
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2024. Made By <a href="ahmed.html">Ahmed</a></p>
+        </div>
+    </div>
+
+
+
+
+    
+    
+    
+    
+    
+    <script src="script/main.js"></script>
+
+</body>
+</html>
